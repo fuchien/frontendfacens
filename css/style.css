@@ -1,0 +1,396 @@
+/* RESET */
+h1, h2, h3, p {
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}       
+/* NAV */                                 
+nav {
+	height: 10vh;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.4);
+	z-index: 10;
+}
+nav ul {
+	display: flex;
+}
+nav li {
+	width: 25%;
+	text-align: center;
+	display: flex;
+	height: 10vh;
+}
+nav span {
+	display: block;
+}
+nav a {
+	display: block;
+	color: #FFF;
+	margin: auto;
+}
+nav .fa {
+	font-size: 1.8rem;
+}
+nav span:not(.fa) {
+	font-size: 0.8rem;
+}
+
+/* HEADER */
+header {
+    background-color: #30d5c6;
+    background-image: url("../img/invoker1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: #FFF;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+header:after {
+    position: absolute;
+    content: '';
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+    background-color: rgba(0,0,0,.6);
+    z-index: -1;
+}
+
+header div {
+    margin: auto;
+    min-width: 250px;
+    
+}
+
+h1 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 16px;
+    margin: 20px auto;
+}
+
+header a {
+    background-color: cadetblue;
+    color: #FFF;
+    display: block;
+    max-width: 160px;
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 12px 0;
+    border-radius: 6px;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+header a:hover {
+    background-color: cornflowerblue;
+}
+
+@media (min-width: 420px) {
+    header { 
+        background-color:darkslateblue;
+        font-family: fantasy;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        background-color: dodgerblue;
+    }
+    h1 {
+        font-weight: bold;
+        font-size: 45pxx;
+    }
+}
+@media (min-width: 1024px) {
+    header {
+        background-color: #c6c6d5;
+    }
+    h1 {
+        font-weight: bold;
+        font-size: 60px;
+    }
+}
+
+/* DESTAQUE */
+#destaque {
+    text-align: center;
+}
+
+#destaque h2 {
+    margin: 40px auto;
+}
+
+.imagem {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,.5);
+    margin-bottom: 16px;
+    transition: all 0.3s ease;
+}
+
+.imagem:hover {
+    transform: scale(1.1);
+}
+
+#destaque li {
+    margin: 50px auto;
+}
+
+#destaque2 {
+    padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+    #destaque ul {
+        display: flex;
+    }
+}
+
+/* DETALHES */
+.detail {
+    padding: 30px 5%;
+}
+
+.detail h2 {
+    text-align: center;
+    color: deepskyblue;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .detail {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .detail h2 {
+    width: 100%;
+    text-align: left;
+  }
+
+  .detail-right h2 {
+    text-align: right;
+  }
+
+  .detail img {
+    width: 50%;
+  }
+
+  .detail p {
+    width: 50%;
+    margin-left: 0;
+  }
+
+  .detail-right img {
+    order: 0;
+  }
+
+  .detail-right p {
+    order: 1;
+  }
+
+}
+
+/* faixa */
+.faixa {
+  background-color: #333;
+  text-align: center;
+  padding: 5vh 5vw;
+  margin: 5vh 0;
+  color: #fff;
+}
+
+/* CONTATO */
+.contact {
+    background-color: #999;
+    min-height: 90vh;
+    padding: 5vh 5vw;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+.contact h2, .contact p, .contact ul {
+    margin: auto;
+}
+
+.contact a {
+    color: #FFF;
+    background-color: rgba(123,231,50,.5);
+    padding: 16px;
+    display: block;
+    max-width: 240px;
+    margin: 10px auto;
+    transition: all 0.2s ease;
+}
+
+.contact a:hover {
+    color: rgba(123,231,50,.5);
+    background-color: #FFF;
+}
+
+@media (min-width: 768px) {
+    .contact {
+        min-height: 30vh;
+        flex-flow: row wrap;
+    }
+    .contact h2 {
+        width: 100%;
+    }
+    .contact p {
+        width: 50%;
+        max-width: 300px;
+    }
+    .contact ul {
+        width: 50%;
+    }
+}
+
+
+.contact2{
+	background-image: linear-gradient(to right, #00BFFF 60%, #4682B4);
+	display:flex;
+	flex-flow:column;
+	padding-bottom: 15vh;
+}
+@media (min-width: 768px) {
+  .contact2 {
+    -webkit-flex-flow: row;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    padding: 32px 3vw; } }
+
+.contact h2 {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: .1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #134063; }
+
+.contact a {
+  color: #FFF;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  padding: 1rem;
+  display: block;
+  font-weight: 700; }
+
+.contact a span {
+  width: 1rem;
+  text-align: center; }
+
+.contact .highlight-area {
+  margin: 1rem auto;
+  width: 100%; }
+
+.contact .highlight-area:last-of-type {
+  margin-bottom: 0; }
+
+@media (min-width: 768px) {
+  .contact2 .highlight-area {
+    margin-bottom: 0; }
+  .contact2 .highlight-area:first-of-type h2 {
+    text-align: left;
+    margin-left: 1.5rem; }
+  .contact2 .highlight-area:last-of-type h2 {
+    text-align: right;
+    margin-right: 1.5rem; }
+  .contact2 .highlight-area:last-of-type {
+    width: 100%; }
+  .contact2 .highlight-area:last-of-type .li {
+    text-align: right;
+    display: inline-block;
+    float: right;
+    clear: both; }
+  .contact2 .highlight-area:last-of-type .li:before {
+    right: 0;
+    left: auto; }
+  .contact2 .highlight-area:last-of-type a span {
+    float: right;
+    margin-right: 0;
+    margin-left: .5rem;
+    margin-top: .1rem; }
+  .contact2 .li {
+    display: inline-block;
+    float: left;
+    clear: both; } }
+.contact2 a{
+	color:#000;
+	transition:all .3s ease;
+	padding:1rem;
+	display:block;
+	font-weight: 700;
+}
+.contact2 li{
+	text-align:left;
+	margin:.75rem;
+	position:relative;
+	z-index:1;
+}
+.contact2 li:before{
+	position:absolute;
+	left:0;bottom:0;
+	content:'';
+	height:4px;
+	width:100%;
+	background:#FFF;
+	transition:all .3s ease;
+	z-index:-1;
+}
+.contact2 li:hover a{
+	color:#2377b9;
+	z-index:2;
+}
+.contact2 li:hover:before{
+	height:100%;
+}
+.contact2 a:hover {
+	background-color: rgba(50,250,50,.4);
+}
+
+//flexboxfroggy.com
+//a.singlediv.com
+//unsplash.com
+//420 768 1024 1200 1920
